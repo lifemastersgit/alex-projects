@@ -1,6 +1,4 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/alicia", "dest": "/alicia/index.html" }
-  ]
+  "cleanUrls": true
 }
