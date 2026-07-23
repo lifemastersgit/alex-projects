@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Partnership — Alicia Johnson</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍯</text></svg>">
+<meta property="og:title" content="Content Partnership — Alicia Johnson">
+<meta property="og:description" content="Full service content production — strategy, filming, editing, and distribution.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #111010;
+    --ink-mid: #3a3835;
+    --ink-soft: #7a7672;
+    --ink-muted: #b0ada9;
+    --cream: #FAFAF8;
+    --cream-dark: #F3F1ED;
+    --border: #e8e6e2;
+    --honey: #C9954A;
+    --honey-light: #f5ead8;
+    --honey-dark: #9a6e31;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 5rem;
+  }
+
+  .header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 3.5rem 2rem;
+    text-align: center;
+  }
+
+  .header-eyebrow {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--honey);
+    margin-bottom: 1rem;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .header h1 em {
+    font-style: italic;
+    color: var(--honey);
+  }
+
+  .header p {
+    font-size: 14px;
+    color: #9a9793;
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 0 0;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--honey);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-body {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0 0;
+  }
+
+  /* WHAT YOU GET */
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+  }
+
+  .pillar {
+    background: white;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .pillar-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--honey);
+    margin-bottom: 0.5rem;
+  }
+
+  .pillar-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+
+  .pillar-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pillar-items li {
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  .pillar-items li::before {
+    content: '·';
+    color: var(--honey);
+    font-size: 18px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  /* PRICING CARDS */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .price-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+  }
+
+  .price-card.featured {
+    border-color: var(--honey);
+  }
+
+  .price-card-top {
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .price-card.featured .price-card-top {
+    background: var(--ink);
+    border-bottom-color: #2a2825;
+  }
+
+  .price-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: var(--honey-light);
+    color: var(--honey-dark);
+    margin-bottom: 0.75rem;
+  }
+
+  .price-card.featured .price-badge {
+    background: var(--honey);
+    color: white;
+  }
+
+  .price-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+
+  .price-card.featured .price-card-name { color: white; }
+
+  .price-card-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .price-card.featured .price-card-desc { color: #9a9793; }
+
+  .price-amount {
+    margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+  }
+
+  .price-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  .price-card.featured .price-number { color: var(--honey); }
+
+  .price-period {
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+
+  .price-card.featured .price-period { color: #9a9793; }
+
+  .price-card-body {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .deliverable-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .deliverable-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    color: var(--ink-mid);
+    line-height: 1.5;
+  }
+
+  .deliverable-list li::before {
+    content: '✦';
+    color: var(--honey);
+    font-size: 9px;
+    margin-top: 5px;
+    flex-shrink: 0;
+  }
+
+  .deliverable-list li span {
+    color: var(--ink-soft);
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* CALLOUT */
+  .callout {
+    background: var(--honey-light);
+    border: 1px solid #e8d4b0;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .callout-icon {
+    font-size: 18px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  .callout-text {
+    font-size: 13.5px;
+    color: var(--honey-dark);
+    line-height: 1.6;
+  }
+
+  .callout-text strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: var(--ink);
+  }
+
+  /* TERMS */
+  .terms {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+  }
+
+  .terms-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .terms ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .terms ul li {
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  .terms ul li::before {
+    content: '·';
+    color: var(--honey);
+    font-size: 18px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 13px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+
+  .footer a {
+    color: var(--honey);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p class="header-eyebrow">Content partnership</p>
+  <h1>Alicia Johnson<br><em>× Alex</em></h1>
+  <p>Full service content production — strategy, filming, editing, and everything in between. Alicia focuses on coaching. Alex handles the rest.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="section">
+    <p class="eyebrow">What's covered</p>
+    <h2 class="section-title">Everything from idea<br>to published content.</h2>
+    <p class="section-body">This isn't a consultant sending you notes. This is end-to-end content production — showing up, setting up, filming, editing, and delivering content ready to post. Three layers, all handled.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <p class="pillar-label">Layer 1</p>
+        <p class="pillar-title">Strategy & Planning</p>
+        <ul class="pillar-items">
+          <li>Monthly and quarterly content planning</li>
+          <li>Script writing for every long-form video</li>
+          <li>Hook writing — multiple options per video</li>
+          <li>Clip identification with timestamps</li>
+          <li>Caption and post copy for every platform</li>
+          <li>Thumbnail text direction</li>
+          <li>Regular strategy reviews with Alicia</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <p class="pillar-label">Layer 2</p>
+        <p class="pillar-title">Production & Filming</p>
+        <ul class="pillar-items">
+          <li>On-location filming at Alicia's home</li>
+          <li>Full camera, lighting, and audio setup</li>
+          <li>Direction during filming for best performance</li>
+          <li>Multiple setups per session — teaching and conversational</li>
+          <li>Setup and full breakdown included</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <p class="pillar-label">Layer 3</p>
+        <p class="pillar-title">Editing & Delivery</p>
+        <ul class="pillar-items">
+          <li>Full edit of long-form YouTube video</li>
+          <li>Short-form clips cut and formatted for each platform</li>
+          <li>Captions and subtitles on all short-form content</li>
+          <li>Colour grade and audio polish</li>
+          <li>Content delivered ready to post — no additional work needed</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <p class="eyebrow">Pricing</p>
+    <h2 class="section-title">Two ways to work together.</h2>
+    <p class="section-body">Monthly for flexibility, quarterly for consistency and a better rate. Both include everything above — strategy, filming, and full editing.</p>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="price-card-top">
+          <div class="price-badge">Monthly</div>
+          <p class="price-card-name">Monthly Retainer</p>
+          <p class="price-card-desc">Full production cycle each month. Best for getting started with no long-term commitment.</p>
+          <div class="price-amount">
+            <span class="price-number">$3,000</span>
+            <span class="price-period">/ month</span>
+          </div>
+        </div>
+        <div class="price-card-body">
+          <ul class="deliverable-list">
+            <li>2 filming sessions per month
+              <span>On-location at Alicia's home — camera, lights, audio all included</span>
+            </li>
+            <li>2 fully edited long-form YouTube videos
+              <span>Scripted, filmed, and edited end to end</span>
+            </li>
+            <li>6–10 short-form clips
+              <span>Cut from long-form content, formatted for Instagram, TikTok, YouTube Shorts, and Facebook</span>
+            </li>
+            <li>Full strategy and content plan
+              <span>Topics, scripts, hooks, captions, and thumbnail direction for the month</span>
+            </li>
+            <li>Monthly strategy check-in
+              <span>Review performance, adjust direction, plan ahead</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-card-top">
+          <div class="price-badge">Recommended</div>
+          <p class="price-card-name">Quarterly Partnership</p>
+          <p class="price-card-desc">Three months of consistent production and strategy — the commitment level where real growth happens.</p>
+          <div class="price-amount">
+            <span class="price-number">$8,000</span>
+            <span class="price-period">/ quarter</span>
+          </div>
+        </div>
+        <div class="price-card-body">
+          <ul class="deliverable-list">
+            <li>Everything in the monthly plan — for 3 months
+              <span>6 filming sessions, 6 long-form videos, 20–30 short-form clips</span>
+            </li>
+            <li>Full 90-day content calendar
+              <span>Topics and filming schedule mapped across the entire quarter</span>
+            </li>
+            <li>Quarterly content audit
+              <span>What performed, what to double down on, what to cut going into the next quarter</span>
+            </li>
+            <li>Priority scheduling and turnaround
+              <span>Filming and editing slots locked in ahead of time so nothing slips</span>
+            </li>
+            <li>One dedicated strategy session per quarter
+              <span>A full review of direction, growth, and what's next for the brand</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="callout">
+      <div class="callout-icon">🍯</div>
+      <div class="callout-text">
+        <strong>Why quarterly is the move</strong>
+        One month of content doesn't build an audience. Three months of consistent, well-produced content — posted regularly, with a clear strategy behind it — does. The quarterly partnership is built around that reality, and saves $1,000 compared to month-to-month.
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <p class="eyebrow">Terms</p>
+    <h2 class="section-title">How it works.</h2>
+
+    <div class="terms">
+      <p class="terms-label">The basics</p>
+      <ul>
+        <li>Monthly retainer billed at the start of each month. Cancel with 14 days notice.</li>
+        <li>Quarterly billed upfront for the full 3-month period at the discounted rate.</li>
+        <li>Filming sessions scheduled at the start of each month — dates agreed in advance.</li>
+        <li>Edited content delivered within 7 days of each filming session.</li>
+        <li>One round of revisions included per video.</li>
+        <li>All content delivered via a shared folder, ready to post — no additional work required from Alicia.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Questions? Reach out at <a href="mailto:alex@lifemasters.com">alex@lifemasters.com</a></p>
+    <p style="margin-top: 6px; font-size: 12px;">Prepared for Alicia Johnson — Crown of Honey Coaching</p>
+  </div>
+
+</div>
+</body>
+</html>
